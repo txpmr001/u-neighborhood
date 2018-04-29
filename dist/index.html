@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This single page Google Maps web application displays
+    neighborhood locations with additional information collected through Google Places,
+    Yelp, and Foursquare API’s">
+  <meta name="keywords" content="map, application, web application,
+    knockout, jquery mobile, api, google, yelp, foursquare">
+  <meta name="author" content="Peter M Reynolds">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="css/neighborhood.css">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/knockout-3.4.1.min.js"></script>
+  <script src="js/lodash.4.17.10.min.js"></script>
+  <title>Neighborhood Map</title> 
+</head>
+
+<body>
+  <!-- main page (toolbar, map, list panel, settings popup) -->
+  <div data-role="page" id="map-page">
+    <!-- toolbar -->
+    <div class="toolbar ui-bar">
+      <!-- search filter -->
+      <input type="search" id="search-mini" name="search-mini" value="" data-mini="true" value=""
+        onkeyup="ko.contextFor(this).$root.setFilter(this.value);"
+        onchange="ko.contextFor(this).$root.setFilter(this.value);" />
+      <!-- button show / hide list -->
+      <a href="#list-panel" data-role="button" data-mini="true">List</a>
+      <!-- button open settings popup -->
+      <a href="#settings-popup" data-rel="popup" id="gear-button" data-role="button" data-mini="true" data-icon="gear"></a>
+    </div> <!-- /toolbar -->
+  
+    <!-- map -->
+    <div role="main" class="ui-content map-content">
+      <div id="map"></div>
+    </div>
+  
+    <!-- list -->
+    <div data-role="panel" id="list-panel" data-display="overlay" data-dismissible="true">
+      <!-- list toolbar -->
+      <div class="panel-toolbar">
+        <a href="#map-page" data-rel="close" data-role="button" data-inline="true" data-mini="true">Hide List</a>
+      </div>
+      <!-- list table -->
+      <table id="list-table" cellpadding="3">
+        <thead>
+          <tr><th>Name</th><th>Address</th><th>Phone</th></tr>
+        </thead>
+        <tbody id="list-body" data-bind="foreach: mapFilteredPlaces">
+          <tr class="list-row" data-bind="css: { selected: isSelected }">
+            <td data-bind="text: idx" class="list-idx"></td>
+            <td data-bind="text: name, click: $root.clickPlace"></td>
+            <td data-bind="text: address, click: $root.clickPlace"></td>
+            <td><a data-bind="attr: { href: phoneLink}"><span data-bind="text: phone"></span></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div> <!-- /list --> 
+
+    <!-- settings popup -->    
+    <div data-role="popup" id="settings-popup">
+      <!-- button close -->
+      <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+      <div data-role="header">
+        <h1>Settings</h1>
+      </div>
+      <div role="main" class="ui-content">
+        <!-- toggle switch show / hide markers -->
+        <div data-role="fieldcontain" class="toggle-switch">
+          <span class="switch-label">Show Markers:</span>
+          <select data-bind="value: showMarkers" id="marker-switch" name="marker-switch" data-role="flipswitch">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+        <!-- button recenter map -->
+        <div>
+          <button type="button" id="recenter-map" class="ui-btn ui-btn-inline">Recenter Map</button>
+        </div>
+      </div>
+    </div> <!-- /settings popup -->  
+  </div> <!-- /main page -->
+
+  <script src="js/neighborhoodVM.js"></script>
+  <script src="js/neighborhood.js"></script>
+  <script src="js/formatInfo.js"></script>
+  <script async defer
+    src="proxy.php?apiUrl=https://maps.googleapis.com/maps/api/js?callback=initMap&v=3&key=%google_api_key%">
+  </script>
+
+</body>  
+</html>
+ 

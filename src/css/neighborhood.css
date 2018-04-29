@@ -1,0 +1,133 @@
+/* make the map full screen */
+.map-content {
+  width: 100%;
+  padding: 0;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* toolbar layout */
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #ded5cc;  /* light brown */
+}
+
+/* modify defaults for jqm search input */
+.ui-input-search {
+  width: 100px !important;
+}
+
+/* modify defaults for jqm gear icon */
+#gear-button {
+  padding: 2px 16px 2px 16px !important;;
+}
+
+/* center buttons in panel toolbar */
+.panel-toolbar {
+  width: 100%;
+  text-align: center;
+}
+
+/* modify defaults for jqm panel text */
+.list-row {
+  text-shadow: none;
+}
+
+/* hide place idx in list */
+.list-idx {
+  display: none;
+}
+
+/* list phone links */
+#list-table a {
+  text-decoration: none;
+}
+
+/* make list items seem selectable */
+#list-table td {
+  cursor: default;
+}
+
+/* highlight selected list row */
+.selected {
+  background-color: #e0e0e0;  /* light gray */
+}
+
+/* set settings popup size */
+#settings-popup {
+  width: 300px;
+}
+
+/* toggle switch labels */
+.switch-label {
+  font-weight: bold;
+}
+
+/* use media queries to adjust list panel width and font-size,
+ * disable jqm panel dismiss for tablets and larger devices
+ */
+/* phones */
+@media only screen and (max-width: 600px) {
+  #list-panel {
+    width: 70%;
+    font-size: 95%;
+  }
+  .ui-panel-dismiss.ui-panel-dismiss-open {
+    left: 70%;
+  }
+}
+
+/* portrait tablets, large phones */
+@media only screen and (min-width: 600px) {
+  #list-panel {
+    width: 50%;
+    font-size: 90%;
+  }
+  .ui-panel-dismiss.ui-panel-dismiss-open {
+    left: 50%;
+  }
+}
+
+/* landscape tablets */
+@media only screen and (min-width: 800px) {
+  #list-panel {
+    width: 45%;
+    font-size: 85%;
+  }
+  .ui-panel-dismiss.ui-panel-dismiss-open {
+    left: 45%;
+  }
+  .ui-panel-dismiss {display: none;}  /* list stays open for tablets and larger */
+} 
+
+/* laptops & desktops */
+@media only screen and (min-width: 1000px) { 
+  #list-panel {
+    width: 40%;
+    font-size: 80%;
+  }
+  .ui-panel-dismiss.ui-panel-dismiss-open {
+    left: 40%;
+  }
+}
+
+/* add vertial scroll to list panel */
+.ui-panel.ui-panel-open {
+    position:fixed;
+}
+
+.ui-panel-inner {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+

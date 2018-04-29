@@ -1,0 +1,206 @@
+[
+  {
+    "idx": 0,
+    "name": "Home",
+    "googleId": null,
+    "yelpId": null,
+    "address": "Braun's Farm, San Antonio, TX 78254",
+    "location": {
+      "lat": 29.539150,
+      "lng": -98.664258
+    },
+    "phone": null,
+    "tags": ["home"]
+  },
+  {
+    "idx": 1,
+    "name": "HEB",
+    "googleId": "ChIJxXrq4u1nXIYRD6VwK_7_GBM",
+    "yelpId": "FJbQPgA2GzdMU-Ii8LBUmw",
+    "address": "7951 Guilbeau Rd, San Antonio, TX 78250",
+    "location": {
+      "lat": 29.520051,
+      "lng": -98.643932
+    },
+    "phone": "(210) 523-0296",
+    "tags": [
+      "grocery",
+      "pharmacy",
+      "gas"
+    ]
+  },
+  {
+    "idx": 2,
+    "name": "HEB plus!",
+    "googleId": "ChIJMRGe94BoXIYRKx3TM4oN4yE",
+    "yelpId": "91uQB46ZSIYygGJeaf3Jww",
+    "address": "9238 North Loop 1604 W, San Antonio, TX 78249",
+    "location": {
+      "lat": 29.5544341,
+      "lng": -98.66273419999999
+    },
+    "phone": "(210) 682-0165",
+    "tags": [
+      "grocery",
+      "pharmacy",
+      "department"
+    ]
+  },
+  {
+    "idx": 3,
+    "name": "Super Target",
+    "googleId": "ChIJaWXpAX9oXIYRLy-OizQ8k44",
+    "yelpId": "nHn2tn8DkbJjcnULCcU8Ag",
+    "address": "11311 Bandera Rd, San Antonio, TX 78250",
+    "location": {
+      "lat": 29.5477102,
+      "lng": -98.66318620000004
+    },
+    "phone": "(210) 682-2253",
+    "tags": [
+      "grocery",
+      "pharmacy",
+      "department"
+    ]
+  },
+  {
+    "idx": 4,
+    "name": "7-Eleven",
+    "googleId": "ChIJnWDBqpJnXIYRblMGSGpvg6k",
+    "yelpId": "9_AEN1Fx8Xkl42ktjvoOfw",
+    "address": "8309 Bandera Rd, San Antonio, TX 78250",
+    "location": {
+      "lat": 29.519670,
+      "lng": -98.638144
+    },
+    "phone": "(210) 520-0362",
+    "tags": [
+      "convenience",
+      "gas"
+    ]
+  },
+  {
+    "idx": 5,
+    "name": "Walgreens",
+    "googleId": "ChIJkygkjUJoXIYRtSR3Q9nSTbM",
+    "yelpId": "pFlTLXD800hERiUErtSKBA",
+    "address": "10003 W Loop 1604 N, San Antonio, TX 78254",
+    "location": {
+      "lat": 29.537525, 
+      "lng": -98.683353
+    },
+    "phone": "(210) 688-0405",
+    "tags": [
+      "pharmacy",
+      "convenience"
+    ]
+  },
+  {
+    "idx": 6,
+    "name": "Petsmart",
+    "googleId": "ChIJL3OffXxoXIYR7rysbwuMLhk",
+    "yelpId": "-6SekG-F2TkSSPbl5p9jfA",
+    "address": "11791 Bandera Rd, San Antonio, TX 78250",
+    "location": {
+      "lat": 29.546808,
+      "lng": -98.668113
+    },
+    "phone": "(210) 526-6631",
+    "tags": [
+      "pet",
+      "pet grooming"
+    ]
+  },
+  {
+    "idx": 7,
+    "name": "McDonald's",
+    "googleId": "ChIJP0gpqPJnXIYRWLwBOXmjzEc",
+    "yelpId": "9xNsAUKVwILguhyQQv_CWA",
+    "address": "7663 Guilbeau Rd, San Antonio, TX 78250",
+    "location": {
+      "lat": 29.5195364,
+      "lng": -98.63858500000003
+    },
+    "phone": "(210) 647-3588",
+    "tags": [
+      "restaurant",
+      "fast-food",
+      "burgers",
+      "dine-in",
+      "take-out"
+    ]
+  },
+  {
+    "idx": 8,
+    "name": "Sonic Drive In",
+    "googleId": "ChIJse4G8EFoXIYRBZUBXqeCzQA",
+    "yelpId": "eBNDyB4TVM4XJZZNWodR9Q",
+    "address": "9684 W Loop 1604 N, San Antonio, TX 78254",
+    "location": {
+      "lat": 29.5331525,
+      "lng": -98.68218519999999
+    },
+    "phone": "(210) 688-9826",
+    "tags": [
+      "restaurant",
+      "fast-food",
+      "burgers",
+      "drive-in",
+      "take-out"
+    ]
+  },
+  {
+    "idx": 9,
+    "name": "Tink-a-Tako",
+    "googleId": "ChIJpcI51QdoXIYRrvft-QNYsrE",
+    "yelpId": "7_qsPF5w8HpmKxLUWX9dZQ",
+    "address": "8181 Tezel Rd, San Antonio, TX 78250",
+    "location": {
+      "lat": 29.517978,
+      "lng": -98.662989
+    },
+    "phone": "(210) 521-0500",
+    "tags": [
+      "restaurant",
+      "mexican",
+      "dine-in",
+      "take-out"
+    ]
+  },
+  {
+    "idx": 10,
+    "name": "Two Step Restaurant and Cantina",
+    "googleId": "ChIJqza0-ThoXIYRTvyjAy-73cc",
+    "yelpId": "YcpARoexGnVjQhcmq3ASGg",
+    "address": "9840 TX-1604 Loop, San Antonio, TX 78254",
+    "location": {
+      "lat": 29.5338234,
+      "lng": -98.68180610000002
+    },
+    "phone": "(210) 688-2686",
+    "tags": [
+      "restaurant",
+      "southwest",
+      "dine-in"
+    ]
+  },
+  {
+    "idx": 11,
+    "name": "Chipotle Mexican Grill",
+    "googleId": "ChIJMeWGA39oXIYRW3L165QakSw",
+    "yelpId": "w_6DyiAntQ9sPqlkmHq_BQ",
+    "address": "11411 Bandera Rd #101, San Antonio, TX 78250",
+    "location": {
+      "lat": 29.548636,
+      "lng": -98.664899
+    },
+    "phone": "(210) 520-2027",
+    "tags": [
+      "restaurant",
+      "mexican",
+      "dine-in",
+      "take-out"
+    ]
+  }
+]
+

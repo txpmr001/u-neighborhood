@@ -1,9 +1,9 @@
 ## Neighborhood Map Project
-The dist version of this application is hosted here:
 
+The dist version of this application is hosted here: 
 [http://24.28.142.95/u-neighborhood/index.html](http://24.28.142.95/u-neighborhood/index.html)
 
-The github repository for this project is here:
+The github repository for this project is here: 
 [https://github.com/txpmr001/u-neighborhood](https://github.com/txpmr001/u-neighborhood)
 
 #### Description
@@ -32,4 +32,3 @@ The PHP proxy is based on the [PHP proxy for XMLHttpRequest calls](https://devel
 
 
  Written with [StackEdit](https://stackedit.io/).
- 

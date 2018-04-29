@@ -4,6 +4,7 @@ The dist version of this application is hosted here:
 [http://24.28.142.95/u-neighborhood/index.html](http://24.28.142.95/u-neighborhood/index.html)
 
 The github repository for this project is here:
+[https://github.com/txpmr001/u-neighborhood](https://github.com/txpmr001/u-neighborhood)
 
 #### Description
 

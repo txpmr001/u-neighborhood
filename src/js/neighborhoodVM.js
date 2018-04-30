@@ -68,7 +68,7 @@ function NeighborhoodVM() {
             var filter = self.filter();
             if (filter) {
                 filter = filter.toUpperCase();  // searches are case insensitive 
-                return mapPlaces().filter(function(i) { return i.search.includes(filter); });
+                return mapPlaces().filter(function(i) { return i.search.indexOf(filter) >= 0; });
             } else {
                 return mapPlaces();
             };
